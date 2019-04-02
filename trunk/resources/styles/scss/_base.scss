@@ -1,0 +1,51 @@
+@charset "utf-8";
+/**
+* Description: base style 
+* Developers: pinghai@leju.com
+**/
+/**, *:before, *:after {box-sizing: border-box;}*/
+body {font:normal 14px/1.5 "\5FAE\8F6F\96C5\9ED1", Helvetica,STHeiti, Droidsansfallback; color:#444;background-color:#fff;/*-webkit-user-select: none;*/-webkit-text-size-adjust: none;word-break:break-all;}
+body,div,dl,dt,dd,del,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure {margin:0;padding:0;}
+input[type="text"],input[type="number"],input[type="password"],input[type="submit"],input[type="button"],textarea {-webkit-appearance: none; outline-style: none; resize: none; border:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;	font-weight:normal;	font-style: normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+header, section {display:block;margin:0;padding:0;}
+a{text-decoration: none;}
+
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;font-size: 0;}
+.unl {text-decoration: underline;}
+.tl {text-align: left;}
+.tc {text-align: center;}
+.tr {text-align: right;}
+.bc {margin-left: auto; margin-right: auto;}
+.fl {float: left;}
+.fr {float: right;}
+.vm {vertical-align: middle;}
+.vt {vertical-align: top;}
+.pr {position: relative;}
+.pa {position: absolute;}
+.none { display: none }
+.scrollBox{width: rem(750);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling: touch;position: fixed;left: 0;right: 0;top:0;bottom: 0;margin:auto;}
+#editHTML{ overflow:hidden;line-height: rem(60);font-size: rem(36);color: #3e4145;clear:both;
+	*{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}
+	ol{ padding-left: 20px; list-style-type: decimal;
+		li{list-style-type: decimal;}
+	}
+	ul{ padding-left: 20px;	list-style-type: disc;
+		li{list-style-type: disc;} 
+	}
+	em{ font-style: italic;}
+	p{clear:both;}
+	img{
+		max-width: 100%!important;height: 100%!important;
+	}
+	h1{margin-top: 0!important;}
+}
+
+
