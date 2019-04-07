@@ -9,25 +9,25 @@ class Lib_redis
     public function __construct($params = array())
     {
         //获取数据库配置文件
-        $redis_config = $this->get_redis_config();
-        if (empty($redis_config))
-        {
-            throw new Exception('redis数据库配置错误！');
-        }
-        if(is_array($redis_config))
-        {
-            $servers = array();
-            foreach ($redis_config as $key => $value)
-            {
-                $servers[] = 'tcp://' . $value;
-            }
-            $options = array('cluster' => 'redis');
-            $this->client = new \Predis\Client($servers, $options);
-        }
-        elseif(is_string($redis_config))
-        {
-            $this->client = new \Predis\Client("tcp://".$redis_config);
-        }
+       // $redis_config = $this->get_redis_config();
+       // if (empty($redis_config))
+       // {
+       //     throw new Exception('redis数据库配置错误！');
+       // }
+       // if(is_array($redis_config))
+       // {
+       //     $servers = array();
+       //     foreach ($redis_config as $key => $value)
+       //     {
+       //         $servers[] = 'tcp://' . $value;
+       //     }
+       //     $options = array('cluster' => 'redis');
+       //     $this->client = new \Predis\Client($servers, $options);
+       // }
+       // elseif(is_string($redis_config))
+       // {
+       //     $this->client = new \Predis\Client("tcp://".$redis_config);
+       // }
     }
     /**
      * 获取数据库配置
