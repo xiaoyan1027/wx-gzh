@@ -39,14 +39,14 @@ class Index extends Base
         // 获取首页数据
         if($type == 1) {
             //猫
-           $params['type'] == 1;
+           $params['type'] = 1;
 
         }elseif ($type == 2 ) {
             //狗
-            $params['type'] == 2;
+            $params['type'] = 2;
         }elseif($type == 3) {
             //其他
-            $params['type'] == 3;
+            $params['type'] = 3;
 
         }
         if(!empty($city__en)) {
