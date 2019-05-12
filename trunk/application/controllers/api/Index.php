@@ -56,6 +56,19 @@ class Index extends Base
         // 获取宠物数据
         $res = $this->Adoptmessage_model->get_data($params);
 
+        $res = array(
+            "name" => "zhangxin",
+            "city_cn" => "北京",
+            "city_en" => "bj",
+            "nick_name" => "糖豆",
+            "sex" => "公",// 公
+            "age" => "1岁",
+            "pet_type" => "1",
+            "is_ster" => "已绝育",
+            "is_immune" => "免疫",
+            "body_status_desc" => "身体状况良好",
+            "add_time" => time()
+        );
         $this->_api_succ($res);
 
     }
